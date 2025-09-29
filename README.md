@@ -1,4 +1,4 @@
-# Alzymer Backend - Engineering Management System
+# Alzymer Backend -  Management System
 
 ## 📋 Overview
 
@@ -57,19 +57,15 @@ bun install
 Create `.env` file:
 ```env
 NODE_ENV=development
-DATABASE_CONNECTION_URL=postgresql://postgres:123456@localhost:5432/engineering
+DATABASE_CONNECTION_URL=postgresql://postgres:123456@localhost:5432/Alzymer
 swaggerApiPath=/api
 swaggerApiDocPath=/api-docs
-serverPort=4000
+serverPort=4001
 jwtSecret=your-secret-key
-uploadDirectory=upload
-backupDirectory=backup
 aesSecretInHex=5ca2b0cc581e4f50d91e722b3c365130a1de0de2064f7a7e561824cd29372a1f
-simulation=false
-mockDataPath=./data/mock-data.json
-tftpPort=69
-tftpFileNameExported=5ca2b0cc581e4f50d91e722b3c365130a1de0de2064f7a7e561824cd29372a1f.json
-nemobusTimeoutInMs=1000
+
+
+
 ```
 
 ### 3. Database Setup
@@ -90,7 +86,7 @@ bunx prisma db seed
 ```bash
 bun run dev
 ```
-Server starts on: `http://localhost:4000`
+Server starts on: `http://localhost:4001`
 
 ### Production Build
 ```bash
@@ -161,7 +157,6 @@ export class Config {
 
 ### Custom Libraries
 - **AES Encryption**: رمزنگاری داده‌های حساس
-- **Modbus TCP**: ارتباط با دستگاه‌های صنعتی
 - **Bitty Parser**: پردازش داده‌های باینری
 
 ## 🔒 Security Features
