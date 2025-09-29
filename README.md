@@ -1,4 +1,4 @@
-# Alzymer Frontend - Engineering Management System
+# Alzymer Frontend - Alzymer Management System
 
 ## 📋 Overview
 
