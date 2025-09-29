@@ -1,0 +1,47 @@
+{
+	"compilerOptions": {
+		"incremental": true,
+		"tsBuildInfoFile": "./dist/build-info.json",
+		"target": "ESNext",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"baseUrl": ".",
+		"module": "commonjs",
+		"paths": {
+			"src/*": [
+				"./src/*"
+			]
+		},
+		"resolveJsonModule": true,
+		"types": [
+			"node",
+			"jest",
+			"bun",
+			"@types/jest",
+			"@quramy/jest-prisma"
+		],
+		"allowJs": true,
+		"strict": true,
+		"strictNullChecks": false,
+		"declaration": false,
+		"importHelpers": true,
+		"outDir": "./dist",
+		"removeComments": true,
+		"sourceMap": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true
+	},
+	"includes": [
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"src/**/*.test.ts",
+		"scripts/**/*.ts",
+		"lib/**/*.ts"
+	],
+	"typedocOptions": {
+		"exclude": "**/node_modules/**",
+		"out": "doc"
+	}
+}

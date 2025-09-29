@@ -1,0 +1,4 @@
+{
+	"main": "./bin/index.js",
+	"output": "./bin/slave.blob"
+}
